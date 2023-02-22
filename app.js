@@ -1,6 +1,9 @@
 function numberToPower(number, power){
-    console.info(Math.log2(1024));
-    // Code here
+    let myStr = 1;
+    for (let i = 0; i < power; i++){
+        myStr = myStr * number;
+    }
+    return myStr;
 }
 
 console.log(numberToPower(4, 2)); // 16
